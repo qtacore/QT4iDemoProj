@@ -1,0 +1,14 @@
+#log
+_attachments
+
+#python catch
+*.pyc
+
+#egg
+*.egg
+
+#project
+.project
+.pydevproject
+
+.idea/
