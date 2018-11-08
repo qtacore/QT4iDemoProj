@@ -9,7 +9,7 @@
 
 ## 配置xctestagent
 
-按照qt4i文档[快速入门指引](https://qt4i.readthedocs.io/zh_CN/latest/intro.html)
+按照qt4i文档[快速入门](https://qt4i.readthedocs.io/zh_CN/latest/intro.html)指引，成功配置xctestagent。
 
 ## 执行Demo用例
 
