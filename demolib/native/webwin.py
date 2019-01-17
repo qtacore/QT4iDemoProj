@@ -12,7 +12,7 @@ class WebWin(Window):
         self._app = app
         self._device = self._app.device
         Window.__init__(self, self._app)
-        self.scroll_win = Window(self._app, "Scroll")
+        self.scroll_win = Window(self._app, "ScrollView")
         locators = {
             'webview' : {'type':IOSWebView, 'root':self.scroll_win, 'locator':QPath("/classname='Other'")},
         }

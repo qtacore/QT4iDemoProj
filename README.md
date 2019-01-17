@@ -15,9 +15,8 @@
 
 ## 执行Demo用例
 
-    
     cd /path/to/project
     #对应setting.py中APP_BUNDLE_ID = "com.apple.Preferences"   
-    python manage.py runscript demotest/native.py
-    #对应setting.py中APP_BUNDLE_ID = "com.tencent.demoapp"，需先安装demoapp  
-    python manage.py runscript demotest/web.py
+    python manage.py runscript demotest/nativetest.py
+    #对应setting.py中APP_BUNDLE_ID = "com.tencent.demoapp"，需先安装demoapp,见链接  
+    python manage.py runscript demotest/webtest.py

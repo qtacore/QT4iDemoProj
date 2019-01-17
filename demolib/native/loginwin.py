@@ -14,12 +14,14 @@ class LoginWin(Window):
         self._device = self._app.device
 
         locators = {
+              'logo': {'type': Element, 'root': self,
+                      'locator': 'logo'},   
               '用户': {'type': Element, 'root': self,
-                      'locator': QPath("/classname = 'TextField' & value = 'Email' & visible = true & maxdepth = 8")},
+                      'locator': 'email'},
               '密码': {'type': Element, 'root': self,
-                     'locator': QPath("/classname = 'TextField' & value = 'Password' & visible = true & maxdepth = 8")},
+                     'locator': 'password'},
               '登录': {'type': Element, 'root': self, 
-                     'locator': 'Login'},
+                     'locator': '登录'},
         }
 
         self.updateLocator(locators)
@@ -33,7 +35,7 @@ class LoginWin(Window):
         user_text_field.send_keys('\n')
         pwd_text_field = self.Controls['密码']
         pwd_text_field.click()
-        pwd_text_field.value = pwd
-        pwd_text_field.send_keys('\n')
+        pwd_text_field.send_keys('%s\n' %pwd)
+        self.Controls['logo'].click()
         self.Controls['登录'].click()
-        return True
+        return not self.Controls['logo'].exist
