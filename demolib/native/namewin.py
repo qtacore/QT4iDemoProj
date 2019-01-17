@@ -1,15 +1,12 @@
 # -*- coding:utf-8 -*-
-'''
-Created on 2018-10-23
 
-'''
 from qt4i.icontrols import Window
 from qt4i.icontrols import Element
 from qt4i.qpath import QPath
 
 
 class NameWin(Window):
-    '''DemoApp 注销登录页面
+    '''系统应用(设置) 设置名称页面
     '''
 
     def __init__(self, app):

@@ -1,15 +1,12 @@
 # -*- coding:utf-8 -*-
-'''
-Created on 2018-10-23
 
-'''
 from qt4i.device import Device
 from demolib.demotestbase import DemoTestcase
 from demolib.demoapp import DemoApp
 
 
-class HelloTest(DemoTestcase):
-    'Demo测试'
+class NativeTest(DemoTestcase):
+    'Native App(系统设置应用)测试'
 
     owner = 'demo'  # --------------------------------------------# 脚本的设计者
     priority = DemoTestcase.EnumPriority.Normal  # -----------------------# 脚本的优先级
@@ -32,5 +29,5 @@ class HelloTest(DemoTestcase):
 
 
 if __name__ == '__main__':
-    HelloTest().debug_run()
+    NativeTest().debug_run()
 

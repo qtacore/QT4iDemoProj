@@ -1,8 +1,5 @@
 # -*- coding:utf-8 -*-
-'''
-Created on 2018-10-23
 
-'''
 from qt4i.itestcase import iTestCase
 from qt4i.device    import Device
 from testbase.conf import settings

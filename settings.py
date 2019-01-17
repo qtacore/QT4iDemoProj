@@ -10,4 +10,8 @@ PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 PROJECT_MODE = "standard"
 INSTALLED_APPS = []
 
-APP_BUNDLE_ID = "com.apple.Preferences"
+# 系统自带设置应用(native)
+APP_BUNDLE_ID = "com.apple.Preferences"    
+
+# demoapp 应用(web)
+# APP_BUNDLE_ID = "com.tencent.demoapp"

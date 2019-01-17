@@ -1,13 +1,10 @@
 # -*- coding:utf-8 -*-
-'''
-Created on 2018-10-23
-
-'''
 
 from qt4i.icontrols import App
 from testbase.conf import settings
-from demolib.infowin import InfoWin
-from demolib.namewin import NameWin
+from demolib.native.infowin import InfoWin
+from demolib.native.namewin import NameWin
+from demolib.native.loginwin import LoginWin
 
 
 class DemoApp(App):
@@ -60,7 +57,14 @@ class DemoApp(App):
         return infoWin.enter_info()
 
     def rename(self, name):
-        '''登出函数
+        '''修改设备名称函数
         '''
         nameWin = NameWin(self)
         return nameWin.modify_name(name)
+    
+    def login(self, user, pwd):
+        '''登录
+        '''
+        loginWin = LoginWin(self)
+        return loginWin.login(user, pwd)
+        
